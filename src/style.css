@@ -1,0 +1,51 @@
+.styles-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.style {
+    width: 20%;
+    height: 200px;
+    background-size: cover;
+}
+
+.render-box {
+    position: relative;
+}
+
+.loading-spinner__wrap {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+.loading-spinner {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    fill: white;
+    display: block;
+}
+
+.loading_spinner circle {
+    animation-name: upAndDown;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.05, .2, .35, 1);
+    animation-iteration-count: infinite;
+}
+
+.loading_spinner circle:nth-child(2) {
+    animation-delay: .18s;
+}
+
+.loading_spinner circle:nth-child(3) {
+    animation-delay: .36s;
+}
+
+@keyframes upAndDown {
+  0% { opacity: 0; transform: translateY(0); }
+  25% { opacity: 1; transform: translateY(-10px); }
+  75% { opacity: 1; transform: translateY(-10px); }
+  100% { opacity: 0; transform: translateY(0); }
+}
