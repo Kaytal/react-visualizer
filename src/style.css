@@ -49,3 +49,16 @@
   75% { opacity: 1; transform: translateY(-10px); }
   100% { opacity: 0; transform: translateY(0); }
 }
+
+.render-box__bkg {
+    max-width: 100%;
+    display: block;
+}
+.render-box__frg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+}

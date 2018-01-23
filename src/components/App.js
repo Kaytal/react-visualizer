@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {styles, profiles, colors} from '../sampleContent';
 import Styles from './Styles';
 import RenderBox from './RenderBox';
+import Attributes from './Attributes';
 
 
 class App extends Component {
@@ -10,15 +11,15 @@ class App extends Component {
     this.state = {
       renderBox: {
         style: {
-          baseImage: 'http://unsplash.it/1600/800'
+          baseImage: 'images/simple.jpg',
+          name: 'Simple'
         },
         color: 'red',
         profile: 'tuffRib'
       },
       styles: styles,
       profiles: profiles,
-      colors: colors,
-      loadingImage: 'test'
+      colors: colors
     }
     this.addStyle = this.addStyle.bind(this);
   }
@@ -45,7 +46,8 @@ class App extends Component {
     return (
       <div className="App">
         <Styles styles={this.state.styles} addStyle={this.addStyle} />
-        <RenderBox bkgImage={this.state.renderBox.style.baseImage} color={this.state.renderBox.color} profile={this.state.renderBox.profile} />
+        <RenderBox style={this.state.renderBox.style.name} bkgImage={this.state.renderBox.style.baseImage} color={this.state.renderBox.color} profile={this.state.renderBox.profile} />
+        <Attributes profiles={this.state.profiles} colors={this.state.colors} addProfile={this.addProfile} addColor={this.addColor} />
       </div>
     );
   }

@@ -1,22 +1,22 @@
 export const styles = {
     simple: {
         name: 'Simple',
-        baseImage: 'http://unsplash.it/1200/1000',
+        baseImage: 'images/simple.jpg',
         thumbImage: 'http://unsplash.it/200/200'
     },
     medium: {
         name: 'Medium',
-        baseImage: 'http://unsplash.it/1201/1001',
+        baseImage: 'images/medium.jpg',
         thumbImage: 'http://unsplash.it/200/201'
     },
     complex: {
         name: 'Complex',
-        baseImage: 'http://unsplash.it/1202/1002',
+        baseImage: 'images/complex.jpg',
         thumbImage: 'http://unsplash.it/200/202'
     },
     industrial: {
         name: 'Industrial',
-        baseImage: 'http://unsplash.it/1203/1003',
+        baseImage: 'images/industrial.jpg',
         thumbImage: 'http://unsplash.it/200/2003'
     }
 };

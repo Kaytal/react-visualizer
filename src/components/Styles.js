@@ -11,7 +11,7 @@ class Styles extends React.Component {
         const style = this.props.styles[key];
 
         return (
-            <div onClick={() => this.props.addStyle(key)} className="style" style={{backgroundImage: 'url(' + style.thumbImage + ')'}}>
+            <div onClick={() => this.props.addStyle(key)} key={key} className="style" style={{backgroundImage: 'url(' + style.thumbImage + ')'}}>
                 <p>{style.name}</p>
             </div>
         )
