@@ -25,7 +25,7 @@ export const profiles = {
     tuffRib: {
         name: 'Tuff Rib',
         colors: [
-            'Bone White', 'Light Grey', 'Dark Grey', 'Black'
+            'Bone White', 'Light Grey', 'Dark Grey', 'Black', 'Red'
         ]
     },
     rPanel: {
@@ -46,5 +46,6 @@ export const colors = [
     'Bone White',
     'Black',
     'Light Grey',
-    'Dark Grey'
+    'Dark Grey',
+    'Red'
 ];

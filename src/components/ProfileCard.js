@@ -5,9 +5,11 @@ class ProfileCard extends React.Component
 
 
     render() {
-        const {profile} = this.props;
+        const {profile, addProfile} = this.props;
 
-        return <h2>{profile}</h2>;
+        return <h2 onClick={() => addProfile(profile)}>
+            {profile}
+        </h2>;
     }
 
 }
