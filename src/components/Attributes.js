@@ -7,15 +7,15 @@ class Attributes extends React.Component
 
 
     renderColor(color,key) {
-
+        debugger;
         return (
-            <ColorCard key={key} color={color} />
+            <ColorCard key={key} color={color} onClick={() => this.props.addColor(color)} />
         )
     }
 
     render() {
 
-        const {colors, profiles} = this.props;
+        const {colors, profiles, addColor, addProfile} = this.props;
 
 
         return (

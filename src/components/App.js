@@ -22,6 +22,8 @@ class App extends Component {
       colors: colors
     }
     this.addStyle = this.addStyle.bind(this);
+    this.addProfile = this.addProfile.bind(this);
+    this.addColor = this.addColor.bind(this);
   }
 
   addStyle(key) {
@@ -36,9 +38,9 @@ class App extends Component {
     this.setState({renderBox: renderBox});
   }
 
-  addColor(key) {
+  addColor(color) {
     let renderBox = this.state.renderBox;
-    renderBox.color = this.state.colors[key];
+    renderBox.color = color;
     this.setState({renderBox: renderBox});
   }
 
