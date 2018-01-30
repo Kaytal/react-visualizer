@@ -4,8 +4,10 @@ class ColorCard extends React.Component
 {
 
     render() {
-        const {color} = this.props;
-        return <h2>{color}</h2>;
+        const {color, addColor} = this.props;
+        return <h2 onClick={() => addColor(color)}>
+            {color}
+        </h2>;
     }
 
 }

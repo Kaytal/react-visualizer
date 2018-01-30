@@ -25,7 +25,7 @@ class RenderBox extends React.Component
                 { !this.state.loaded &&
                     <LoadingSpinner />
                 }
-                <img className="render-box__frg" src={'images/' + style.toLowerCase() + '_' + color + '_' + profile + '.png'} alt="" />
+                <img className="render-box__frg" src={'images/' + style.toLowerCase() + '_' + color.toLowerCase().replace(" ", "_") + '_' + profile.name.toLowerCase().replace(" ", "_") + '.png'} alt="" />
             </div>
         );
     }
